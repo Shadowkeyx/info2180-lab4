@@ -1,6 +1,6 @@
 window.onload=function(){
-	let search = document.getElementsByClassName('btn')[0];
-	var url = "http://localhost:8888/info2180-lab4/superheroes.php?query=";
+	let search = document.getElementsByClassName('myBtn')[0];
+	var url = "http://localhost/info2180-lab4/superheroes.php";
 
 	search.addEventListener("click", function(e){
 		e.preventDefault();
