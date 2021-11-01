@@ -5,7 +5,7 @@ window.onload=function(){
 	search.addEventListener("click", function(e){
 		e.preventDefault();
         var req = new XMLHttpRequest();
-		var s = document.getElementById("search").value;
+		var b = document.getElementById("search").value;
 
 		req.onreadystatechange = function(){
 			if (req.readyState == XMLHttpRequest.DONE) {
@@ -18,8 +18,8 @@ window.onload=function(){
 				}
 			}
 		}
-		console.log(s);
-		req.open('GET',url+s, true);
+		console.log(b);
+		req.open('GET',url+b, true);
 		req.send();
 	});
 }
