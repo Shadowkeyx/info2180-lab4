@@ -77,7 +77,7 @@ $found = false;
     <?php foreach ($superheroes as $superhero): ?>
         <li><?= $superhero['alias']; ?></li>
     <?php endforeach; ?>
-    <?php else:?>
+<?php else:?>
 		<?php foreach ($superheroes as $superhero):?>
 			<?php if ($search == $superhero['alias'] || $search == $superhero['name']):?>
 				<h3><?php echo $superhero['alias'];?></h3>
